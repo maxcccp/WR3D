@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WR3D</title>
+	<link rel="shortcut icon" href="img/logo.ico">
+	<link rel="stylesheet" type="text/css" href="WR3D/gui/dat.gui.css">
+	<link rel="stylesheet" type="text/css" href="WR3D/wr3dEngine.css">
+	<link rel="stylesheet" type="text/css" href="css/preloader.css">
+	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Satisfy&effect=3d">
+
+</head>
+
+<body>
+
+	 <!-- loader -->
+	 <div id="page-preloader" class="preloader">
+	   <div class="loader"> <span id="load_parc">0%</span></div>
+	 </div>
+	 <!-- ./loader -->
+
+	<!-- Screen saver -->
+	<div id="mb3DScreenSarver"></div>
+
+	<!-- Information block.-->
+	<div class="divInfo">
+
+		<span id="fps" style="margin-left: 10px;">---</span><br>
+		<img id="mb-logo" style="margin-top: 10px;" src="img/logo.ico"><br>
+		<span class="font-effect-3d">WR3D</span><br>
+		<span class="text-info-center"> WebRenderer3D </span>
+		<span ><a href="https://mbprogrammer.com/" name="site" target="external">www.mbprogrammer.com</a></span><hr>
+		
+		<button id="btnVolMax">+</button>
+		<button id="btnVolMin">-</button>
+		<button id="btnSound">Pause &#9632;</button>
+		 
+
+		<!--a href="#nul" onclick="window.open('https://mbprogrammer.com/','','Toolbar=1,Location=0,Directories=0,Status=0,Menubar=0,Scrollbars=0,Resizable=0,Width=800,Height=600');">site</a-->
+	</div>
+	<!-- ./Information block.-->
+
+	<!-- note: Fon music -->
+	<div id="blockSound">
+		<audio id="soundFon" src="./sound/Delta_Wave.mp3" type="audio/mpeg"></audio>
+	</div>
+
+	<!-- note: Skybox testure -->
+	<div id="blokSkybox">
+		<img src="./img/CloudsWater/left.png"  	style="display: none">
+		<img src="./img/CloudsWater/right.png"  style="display: none">
+		<img src="./img/CloudsWater/bottom.png" style="display: none">
+		<img src="./img/CloudsWater/top.png"  	style="display: none">
+		<img src="./img/CloudsWater/front.png"  style="display: none">
+		<img src="./img/CloudsWater/back.png"  	style="display: none">
+	</div>
+	
+
+
+
+	<!-- Paint canvas -->
+	<canvas id="mbCamvas"></canvas>
+	
+	<!-- #include script depends -->
+	<script src="js/howler.core.js" 		type="text/javascript"></script>
+	<script src="js/preloader.js" 			type="text/javascript"></script>
+	<script src="WR3D/gui/dat.gui.js" 		type="text/javascript"></script>
+	<script src="WR3D/math/gl-matrix.js" 	type="text/javascript"></script>
+
+	<!-- #include script WR3D engine -->
+	<script src="WR3D/wr3dEngine.js" type="text/javascript"></script>
+	<script src="WR3D/wr3dFont.js"   type="text/javascript"></script>
+
+	<!-- #include file application programm -->
+	<script src="Game.js" type="text/javascript"></script>
+
+</body>
+
+	
+</html>
